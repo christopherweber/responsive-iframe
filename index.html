@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+</head>
+
+<script>
+    console.log("hello")
+    var height = ""
+    var width = ""
+    var url = ""
+
+    function myFunction(){
+
+    var test = document.getElementById("height-input").value
+    console.log(test)
+    }
+    
+</script>   
+<body>
+
+
+    Height: <input id="height-input"></input>
+    Width: <input id="width-input"></input>
+    URL: <input id="source-url"></input>
+    <submit onclick="myFunction()"></submit>
+
+    <div id="iframe-embed">
+        <h2>Embed for responsive iframe: </h2>
+    </div>
+    
+    <div id="iframe-example">
+        
+        <h2>Example iframe: </h2>
+        <div style="position: relative;width: auto; padding: 0 0 41.9%;">
+        <iframe  style='position: absolute;top: 0;left: 0;bottom: 0;right: 0;margin: 0;padding: 0;border: 0 none;height: 1px;width: 1px;min-height: 800px;min-width: 900px' frameborder='0' src="http:/{you hosted content's src code here}"></iframe>
+        </div>
+
+    </div>
+
+</body>
+</html>
